@@ -1,0 +1,111 @@
+<html>
+    <title>意見回饋</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <head>
+    <script type="text/javascript">
+    function playPause() {    
+    var music = document.getElementById('music2');    
+    var music_btn = document.getElementById('music_btn2');    
+    if (music.paused){    
+        music.play();    
+        music_btn.src = 'image/play1.png';    
+    }    
+    else{    
+        music.pause();    
+        music_btn.src = 'image/stop1.png';     
+    }    
+    }      
+    function btnck(){
+    var name=document.getElementById("name");
+    var b=document.getElementById("btn");
+    if(name.value==""){
+        alert("姓名不能为空！");}
+    else{
+        alert("提交成功！");}
+    }
+    </script>
+    </head>
+<body>
+    <div class="header" id="top">   
+        <div class="wrap">
+			<div class="logo">
+				<a href="index.html"><img src="image/logo3.jpg" title="logo" /></a>
+			</div>
+        </div>
+    <div class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="character.html">人物</a></li>
+            <li><a href="fruit.html">悪魔の果実</a></li>
+            <li class="active"><a href="feedback.html">Feedback</a></li>
+        </ul>
+            </div> 
+        <div class="clear"></div>
+    </div>
+    <div id="background" style="position:absolute; width:100%; height:100%; z-index:-1">  
+		<img src="image/bg06.jpg" height="100%" width="100%"/> 
+	</div>
+    <div class="playandstop">
+        <audio id="music2" src="sound/ED1.mp3"  autoplay="autoplay" loop="loop"></audio>   
+        <a href="javascript:playPause();"><img src="image/play1.png" width="48" height="50" id="music_btn2" border="0"></a>
+    </div>
+    <div class="survey">
+        <table border="0" align="center"style="text-align:left;">
+        <tr>
+        <td>
+        <form action="" method="get" value=""><br /><br /><br /><br />
+            
+        <a>姓名：</a><input id="name"type="text"><br />
+            
+        <a>年齡：</a><select name="selectAge" id="selectAge" value="0">
+        <option value="0">請選擇</option>
+        <option value="1">less16</option>
+        <option value="2">16-21</option>   
+        <option value="3">22-25</option>   
+        <option value="4">26-29</option>   
+        <option value="5">30-35</option>   
+        <option value="6">Over35</option>
+        </select><br />
+            
+        <laber>性別：</laber>
+        <label><input name="sex" type="radio" value="1" />男 </label> 
+        <label><input name="sex" type="radio" value="2" />女 </label><br />
+            
+        <label>你喜歡草帽海賊團的哪些角色：</label><br />
+        <table border="0">
+        <tr>
+        <td>   
+        <label><input name="character" type="checkbox" value="1">蒙其·D·路飛（モンキー・D・ルフィ）</label><br />
+        <label><input name="character" type="checkbox" value="2">羅羅亞·索隆（ロロノア・ゾロ）</label><br />
+        <label><input name="character" type="checkbox" value="3">娜美（ナミ）</label><br />
+        <label><input name="character" type="checkbox" value="4">烏索普（ウソップ）</label><br />
+        <label><input name="character" type="checkbox" value="5">山治（サンジ）</label><br />
+        <label><input name="character" type="checkbox" value="6">托尼托尼·喬巴（トニートニーチョッパー）</label><br /> 
+        <label><input name="character" type="checkbox" value="7">妮可·羅賓（ニコ·ロビン）</label><br />
+        <label><input name="character" type="checkbox" value="8">弗蘭奇（フランキー）</label><br />
+        <label><input name="character" type="checkbox" value="9">布魯克（ブルック）</label><br />
+        </td>
+        </tr>    
+        </table>
+        <laber>對網站的滿意程度：</laber>
+        <label><input name="mask" type="radio" value="1" />非常滿意 </label> 
+        <label><input name="mask" type="radio" value="2" />滿意 </label> 
+        <label><input name="mask" type="radio" value="2" />一般 </label>
+        <label><input name="mask" type="radio" value="2" />不滿意 </label>
+        <label><input name="mask" type="radio" value="2" />非常不滿意 </label><br /><br />
+        <input id="btn" type="submit" onclick="btnck();" value="提交" style="margin:0px 0px 0px 210px"/>
+        <input id="btn" type="reset" value="重置" style="margin:0px 0px 0px 20px"/>
+        </form>
+
+        </td>    
+        </tr>
+        </table>
+    </div>
+    <div class="indexgifright">
+        <img src="image/01.gif">       
+    </div>
+</body>
+</html>

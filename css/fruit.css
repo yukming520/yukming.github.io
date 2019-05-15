@@ -1,0 +1,81 @@
+.background{
+    width:100%;
+    height:34600px;
+    background-image:url(../image/bg07black.jpg);
+    position: absolute;
+    z-index: -1;
+}
+hr{
+    height: 5px;
+    width: 838px;
+    background-color: #FF0066;
+    border: none;
+}
+/*button css*/
+.button { background: #222 url(overlay-button.png) repeat-x 0 0; display: inline-block; padding: 5px 15px 6px; color: #fff !important; font-size: 13px; font-weight: bold; line-height: 1; text-decoration: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25); -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25); text-shadow: 0 -1px 1px rgba(0,0,0,0.25); border-bottom: 1px solid rgba(0,0,0,0.25); position: relative; cursor: pointer; overflow: visible; width: auto; }
+/*button css*/
+/*button size*/
+.small.button { font-size: 10px; }
+.large.button { font-size: 14px; padding: 8px 19px 9px; }
+/*button size*/
+/*button flash*/
+@-webkit-keyframes greenPulse {
+    from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+    to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes bluePulse {
+    from { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #2daebf; -webkit-box-shadow: 0 0 18px #2daebf; }
+    to { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes redPulse {
+    from { background-color: #bc330d; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #e33100; -webkit-box-shadow: 0 0 18px #e33100; }
+    to { background-color: #bc330d; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes orangellowPulse {
+    from { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #ffb515; -webkit-box-shadow: 0 0 18px #ffb515; }
+    to { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+}
+@-webkit-keyframes purplePulse {
+    from { background-color: #9933cc; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #cc66ff; -webkit-box-shadow: 0 0 18px #cc66ff; }
+    to { background-color: #9933cc; -webkit-box-shadow: 0 0 9px #333; }
+}
+/*button flash*/
+/*button flash time*/
+.green.button { -webkit-animation-name: greenPulse; -webkit-animation-duration: 3s; }
+.blue.button { -webkit-animation-name: bluePulse; -webkit-animation-duration: 4s; }
+.red.button { -webkit-animation-name: redPulse; -webkit-animation-duration: 1s; }
+.orangellow.button { -webkit-animation-name: orangellowPulse; -webkit-animation-duration: 5s; }
+.purple.button { -webkit-animation-name: purplePulse; -webkit-animation-duration: 5s; }
+/*button flash time*/
+/*button will keep flash*/
+a.button {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite; 
+}
+/*button will keep flash*/
+.listword{
+    font-size: 50px;
+}
+@media only screen and (max-width:1300px) {
+    table img{
+        width:400px;
+        align:left;
+    }
+    table div#bg img{
+        width:100%;
+    }
+    table td{
+        width:200px;
+    }
+    hr{
+        width: 100%;
+    }
+}

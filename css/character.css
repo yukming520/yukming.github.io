@@ -1,0 +1,30 @@
+.pic td{
+    width:280px;
+    height:250px;
+    font-weight:bold;
+    color: white;
+    background-color: black;
+}
+.pic img{
+    width: 620px;
+    height: 900px;
+}
+.background{
+    width:100%;
+    height:8500px;
+    background-image:url(../image/bg04.png);
+    position: absolute;
+    z-index: -1;
+}
+.logo{
+	float:left;
+	margin: 10px 0px 0px 0px;
+}
+
+.backtop{
+    bottom:350px;
+    left:0px;
+    position:fixed;
+}   
+
+

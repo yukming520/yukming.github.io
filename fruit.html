@@ -1,0 +1,135 @@
+<html>
+    <title>悪魔の果実</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/fruit.css" />
+    <head>
+    <script type="text/javascript">
+    function playPause() {    
+    var music = document.getElementById('music2');    
+    var music_btn = document.getElementById('music_btn2');    
+    if (music.paused){    
+        music.play();    
+        music_btn.src = 'image/play1.png';    
+    }    
+    else{    
+        music.pause();    
+        music_btn.src = 'image/stop1.png';     
+    }    
+}      
+    function pageScroll(){
+    window.scrollBy(0,-2000);
+    scrolldelay = setTimeout('pageScroll()',50);
+    var sTop=document.documentElement.scrollTop+document.body.scrollTop;
+    if(sTop==0) clearTimeout(scrolldelay);
+    }
+    </script>
+    </head> 
+<body>
+    <div class="header" id="top">
+        <div class="wrap">
+			<div class="logo">
+				<a href="index.html"><img src="image/logo4.jpg" title="logo" /></a>
+			</div>
+        </div>
+    <div class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="character.html">人物</a></li>
+            <li class="active"><a href="fruit.html">悪魔の果実</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+            </div> 
+        <div class="clear"></div>
+    </div>
+    <div class="background" ></div>
+    <div class="playandstop">
+    <div class="wall-of-buttons">
+    <audio id="music2" src="sound/OP16.mp3"  autoplay="autoplay" loop="loop"></audio>   
+    <a href="javascript:playPause();"><img src="image/play1.png" width="48" height="50" id="music_btn2" border="0"></a>   &nbsp;&nbsp;  
+	<a class="large green button" href="#supermanlist">超人系</a>&nbsp;
+	<a class="large blue button" href="#animallist">动物系</a>&nbsp;
+	<a class="large orangellow button" href="#naturallist">自然系</a>&nbsp;
+	<a class="large red button" href="#otherlist">不明系</a>
+    </div>
+    </div>
+    <table border="0">
+    <tr>
+        <td>   
+        <div id="supermanlist">
+        <div class="listword" style="color:#91bd09">超人系&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="large green button" onclick="pageScroll()">置顶</a>
+        </div>
+        <hr />
+        <img src="image/fruit/superman/1.jpg" /><br />
+        <img src="image/fruit/superman/2.jpg" /><br />
+        <img src="image/fruit/superman/3.jpg" /><br />
+        <img src="image/fruit/superman/4.jpg" /><br />
+        <img src="image/fruit/superman/5.jpg" /><br />
+        <img src="image/fruit/superman/6.jpg" /><br />
+        <img src="image/fruit/superman/7.jpg" /><br />
+        <img src="image/fruit/superman/8.jpg" /><br />
+        <img src="image/fruit/superman/9.jpg" /><br />
+        <img src="image/fruit/superman/10.jpg" /><br />
+        <img src="image/fruit/superman/11.jpg" /><br />
+        <img src="image/fruit/superman/12.jpg" /><br />
+        <img src="image/fruit/superman/13.jpg" /><br />
+        <img src="image/fruit/superman/14.jpg" /><br />
+        </div><br />
+            
+        <div id="animallist">
+        <div class="listword" style="color: #2daebf">动物系
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="large blue button" onclick="pageScroll()">置顶</a>
+        </div>
+        <hr />
+        <img src="image/fruit/animal/15.jpg" /><br />
+        <img src="image/fruit/animal/16.jpg" /><br />
+        <img src="image/fruit/animal/17.jpg" /><br />
+        <img src="image/fruit/animal/18.jpg" /><br />
+        <img src="image/fruit/animal/19.jpg" /><br />
+        <img src="image/fruit/animal/20.jpg" /><br />
+        </div> <br />
+        
+        <div id="naturallist">
+        <div class="listword" style=" color: #ffb515">自然系
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="large orangellow button" onclick="pageScroll()">置顶</a>
+        </div>
+        <hr />
+        <img src="image/fruit/natrual/21.jpg" /><br />
+        <img src="image/fruit/natrual/22.jpg" /><br />
+        <img src="image/fruit/natrual/23.jpg" /><br />
+        <img src="image/fruit/natrual/more.jpg" /><br />
+        </div> <br />
+            
+        <div id="otherlist">
+        <div class="listword" style="color: #e33100">不明系
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="large red button" onclick="pageScroll()">置顶</a>
+        </div>
+        <hr />
+        <img src="image/fruit/other/24.jpg" /><br />
+        <img src="image/fruit/other/25.jpg" /><br />
+        <img src="image/fruit/other/26.jpg" /><br />
+        <img src="image/fruit/other/27.jpg" /><br />
+        <img src="image/fruit/other/28.jpg" /><br />
+        &nbsp;
+        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="large purple button" onclick="pageScroll()" align="right">置顶</a>
+        </div>
+        </td>
+        <td>
+        <div id="bg" style="text-align:left;">
+            <img src="image/bg07.jpg"/>
+            <img src="image/bg07black.jpg"  />
+        </div>
+        </td>
+    </tr>
+    </table>
+    <div class="indexgifright">
+        <img src="image/01.gif">       
+    </div>
+</body>
+</html>

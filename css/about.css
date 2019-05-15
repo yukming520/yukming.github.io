@@ -1,0 +1,12 @@
+.logo{
+	float:left;
+	margin: 3px 0px 0px 0px;
+}
+.aboutall{
+    text-align: center;
+}
+.aboutall td{
+    width:500px;
+    height:250px;
+    font-weight:bold;
+}
